@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calorie Tracker</title>
+        <link rel="icon" href="carrot.jpg">
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <h1>Calorie Tracker</h1>
+        <div>
+            <p>Breakfast:</p>
+            <select id="breakfast" onchange="calculateCalories()">
+                <option value="0">Choose breakfast</option>
+                <option value="0">Did not have breakfast - 0 calories</option>
+                <option value="300">Poha</option>
+                <option value="250">Upma</option>
+                <option value="350">Aloo Paratha</option>
+                <option value="200">Dalia</option>
+                <option value="150">Besan Chilla</option>
+                <option value="200">Moong Dal Chilla</option>
+                <option value="350">Kaali Dosa - 2, with sambhar</option>
+                <option value="400">Kaali Dosa - 2, with chutney</option>
+                <option value="450">Kaali Dosa - 2, with sambhar and chutney</option>
+                <option value="400">Masala Dosa - 2, with sambhar</option>
+                <option value="450">Masala Dosa - 2, with chutney</option>
+                <option value="500">Masala Dosa - 2, with sambhar and Chutney</option>
+                <option value="300">Normal Idli - 4, with sambhar</option>
+                <option value="350">Normal Idli - 4, with chutney</option>
+                <option value="400">Normal Idli - 4, with sambhar and chutney</option>
+                <option value="350">Rava Idli- 4, with chutney</option>
+                <option value="400">Red Sauce Pasta</option>
+                <option value="450">White Sauce Pasta</option>
+                <option value="300">Khichdi</option>
+                <option value="250">Paddu/Appe - 6</option>
+                <option value="400">Uttapam - 3</option>
+                <option value="350">Sandwich with Mayonnaise</option>
+                <option value="300">Sandwich without mayonnaise</option>
+                <option value="350">Puliogare</option>
+                <option value="300">Lemon Rice</option>
+            </select>
+        </div>
+        <div>
+            <p>Lunch:</p>
+            <select id="lunch" onchange="calculateCalories()">
+                <option value="0">Choose lunch</option>
+                <option value="0">Did not have lunch - 0 calories</option>
+                <option value="350">Rajma Chawal</option>
+                <option value="300">Dal Chawal</option>
+                <option value="400">Chole Chawal</option>
+                <option value="100">Aloo Beans</option>
+                <option value="100">Bhindi ki Sabzi</option>
+                <option value="200">Aloo Matar Tamatar</option>
+                <option value="150">Aloo Matar Dry Sabzi</option>
+                <option value="60">Mix Veg Sabzi </option>
+            </select>
+        </div>
+        <div>
+            <p>Dinner:</p>
+            <select id="dinner" onchange="calculateCalories()">
+                <option value="0">Choose dinner</option>
+                <option value="0">Did not have dinner - 0 calories</option>
+            </select>
+        </div>
+        <div>
+            <p>Snack:</p>
+            <select id="snack">
+                <option value="0">Choose snack</option>
+                <option value="0">Did not have snacks - 0 calories</option>
+            </select>
+        </div>
+        <div>
+            <p>Beverages: </p>
+            <select id="bev">
+                <option value="0">Choose beverage</option>
+                <option value="0">Did not have beverage - 0 calories</option>
+            </select>
+        </div>
+        <p id="totalCalories">Total Calories: 0</p>
+    </body>
+</html>
